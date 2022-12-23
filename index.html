@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cUbuntu:400,700">
+    <link rel="stylesheet" href="style/tailwindcss.css">
+    <link rel="stylesheet" href="./fontasome/css/all.min.css">
+    <title>Document</title>
+    <style>
+        /* .container{
+        width: 77%;
+        margin: 0 auto;
+
+    }  */
+    @media (min-width: 992px){
+        .container{
+            width: 970px;
+        }
+    }
+    @media (min-width: 1200px){
+.container {
+    width: 1170px;
+}
+}
+         #section1 {
+            background-image: url(./images/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .divider{
+            background-image: url(./images/divider2.png);
+            /* width: 65px;
+            height: 10px;
+            display: block; */
+        }
+        #span{
+            background-image: url(./images/arrow.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        #div1 {
+            background-image: url(./images/img04.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #sec4{
+            background-image: url('./images/img03.jpg');
+
+        }
+        #section5{
+            background-image: url(./images/img02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #section6{
+            background-image: url(./images/img01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+          li:hover .box {
+	
+	transform: translateY(-67%);
+}
+
+li:hover .icoomn{
+	opacity: 0;
+	
+	transform: translateY(-62%);
+}
+
+ li:hover .boxp {
+	opacity: 1;
+	
+	transform: translateY(0);
+}
+
+    </style>
+</head>
+<body>
+    <header class="md:relative z-[2] md:pt-[34px]  md:pb-28  bg-hedercolor fixed top-0 left-0 right-0  py-5 ">
+<div class="container   mx-auto px-[15px]    ">
+    <div class="mx-[-15px]">
+        <div  class="md:w-1/3 w-full relative px-[15px] float-left ">
+            <div class="float-left">
+                <a class="text-color1"><img src="./images/logo.png" class="max-w-full h-auto"></a>
+            </div>
+            <a href="" id="navicon" class="inline-block w-[45px] h-[40px] mt-[10px] text-2xl rounded-sm text-center border border-solid border-color7 transition-all float-right text-color1  md:hidden">
+                <i class="fa fa-bars"></i>
+            </a>
+           
+        </div>
+        <div class="w-2/3 relative px-[15px] float-left ">
+            <ul class="text-right font-Ubuntu m-0 pl-0 hidden md:block">
+                <li class="relative pr-[8.8%] pl-[7%] inline-block">
+                    <p 
+                    class="w-[50px] h-[50px] absolute right-0 top-[-3px]   rounded-[560%] border-[1px] border-solid border-[#292929] text-center pt-3 ">
+                    <i class="fa fa-envelope main-color text-color1 "> </i></p>
+
+                <p class="text-color2 font-bold">Contact US :</p>
+                <a href="mailto:Mail@Example.com" class="text-color3">Mail@Example.com</a>
+                    
+                    
+                </li>
+                <li class="relative pr-[8.8%] pl-[7%] inline-block">
+                    <p
+                                class="w-[50px] h-[50px] rounded-[560%] border-[1px] border-solid border-[#292929] absolute right-0 top-[-3px] text-center pt-3">
+                                <i class="fa fa-phone main-color text-color1   "></i></p>
+
+                            <p class="text-color2 font-bold">Call Us :</p>
+                            <a href="tel:+201093515252" class="text-color3">+201093515252</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<nav class="absolute left-0 right-0 bottom-[-38px]  transition-all font-Ubuntu hidden md:block ">
+    <div class="container mx-auto px-[15px] ">
+        <div class="mx-[-15px] ">
+            <div class="float-left w-[100%]  relative px-[15px]  ">
+                <ul
+                    class="bg-color4 py-5  m-0 flex flex-nowrap  text-[14px] font-bold rounded-[4px] overflow-hidden ">
+                    <li class="text-color1 pt-[7px] pl-[27px] "><a href="#"
+                            class="transition-all bg-transparent">Home</a></li>
+                    <li class="pt-[7px] pl-[27px] text-color5 hover:text-color1"><a href="#sect2">About Us</a></li>
+                    <li class="pt-[7px] pl-[27px] text-color5 hover:text-color1"><a href="#section4">Our Services</a></li>
+                    <li class="pt-[7px] pl-[27px] text-color5 hover:text-color1"><a href="#section5">Pricing Table</a></li>
+                    <li class="pt-[7px] pl-[27px] text-color5 hover:text-color1"><a href="mailto:Mail@Example.com"
+                            class="">Contact Us</a></li>
+                    <button class="ml-auto mr-[27px] text-[12px] rounded-sm  text-color4 hover:text-color1"><a href="#"
+                            class="px-[15px] py-[9px] bg-color1 hover:bg-black transition-all">Get A Quote</a></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav id="mobilemenu" class="hidden absolute left-[-15px] right-[-15px] bottom-auto top-full h-[300px] transition-all font-Ubuntu overflow-y-auto  max-h-screen overflow-hidden ">
+    <div class="  px-[15px] ">
+        <div class="mx-[-15px] ">
+            <div class="float-left w-[100%]  relative px-[15px]  ">
+                <ul
+                    class="bg-color4     text-[14px] font-bold  overflow-hidden ">
+                    <li class="text-[#698cf0] mb-5 "><a href="#"
+                            class="transition-all bg-transparent py-3 px-5">Home</a></li>
+                    <li class="block align-middle text-color5 mb-5"><a href="" class="py-3 px-5">About Us</a></li>
+                    <li class="block align-middle text-color5 mb-5"><a href="" class="py-3 px-5">Our Services</a></li>
+                    <li class="block align-middle text-color5 mb-5"><a href="" class="py-3 px-5">Pricing Table</a></li>
+                    <li class="block align-middle text-color5 mb-5"><a href="mailto:Mail@Example.com"
+                            class="py-3 px-5">Contact Us</a></li>
+                    <button class=" w-full text-[12px] uppercase rounded-sm  text-color4 hover:text-color1 block"><a href="#"
+                            class="px-[15px] py-[9px] bg-color1 hover:bg-black transition-all block rounded-sm">Get A Quote</a></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+                 
+    </header>
+    <script>
+        const but = document.getElementById('navicon');
+        const menu = document.getElementById('mobilemenu');
+        but.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+        <main class="w-full overflow-hidden relative ">
+            <section id="section1" class=" relative md:py-[220px] pb-[90px] pt-44 overflow-hidden ">
+                <span class=" absolute top-0 right-0 bottom-0 left-0 opacity-75 pointer-events-none bg-[#000] "></span>
+                <div class="container mx-auto   px-[15px]  block">
+                    <div class="mx-[-15px] ">
+                        <div class=" md:w-[58.3333333333%] w-[100%] relative px-[15px] float-left ">
+                            <span class="mb-1  text-white block">Creative Landing Page Template</span>
+                            <h1 class="uppercase mb-[18px]  text-white font-Ubuntu md:text-[48px] font-bold md:leading-[60px] leading-10">Let’s get started with <span
+                                    class="text-color1">Swan Lake Template</span> </h1>
+                             <span class="divider  align-top h-[10px] w-[65px] mb-[41px] inline-block"></span> 
+                        <button class="block h-14 w-40 bg-color1 hover:bg-black rounded-sm " ><a href="#" class="    text-color4  font-bold font-Ubuntu ">Explore More</a></button>
+                            
+                            <span id="span"  class="md:block hidden absolute right-[40px] bottom-[-39px] w-[185px] h-[103px] "></span>  
+                        </div>
+
+                    
+                
+                <div class="md:w-[41.6666666667%] w-full   px-[15px]  float-left relative  ">
+                    <section id="section2"
+                        class=" mt-[80px]  pt-10 pb-12 px-5 rounded-[3px] text-center bg-color4 md:pt-[56px] md:pb-[69px] md:px-[30px]  md:my-[-97px]">
+                        <h2 class="uppercase  font-Ubuntu mb-[3px] text-[28px] leading-[30px] text-color5 font-bold">
+                            register now</h2>
+                        <span class="mb-12 block">Take your free trial</span>
+                        <form action="" class="text-start ">
+                            <fieldset>
+                                <div class="mb-5"><input type="text" placeholder="Your Name" id="name"
+                                        class="outline-none h-12 text-color2 py-2 px-6 bg-color6 border-[#eee] w-full">
+                                </div>
+                                <div class="mb-5"><input type="email" id="email" placeholder="Your Email"
+                                        class="outline-none h-12 text-color2 py-2 px-6 bg-color6 border-[#eee] w-full">
+                                </div>
+                                <div class="mb-5"><input type="tel" id="phone" placeholder="Phone Number"
+                                        class="outline-none h-12 text-color2 py-2 px-6 bg-color6 border-[#eee] w-full">
+                                </div>
+                                <!-- <div class="text-[11px] relative font-600 mb-5 bg-color1 pt-[15px] pr-[5px] pb-[13px] pl-[50px] text-color4">
+                                    Thank you for your submission :)
+                                </div> -->
+                                <span class="pb-[10px] md:pb-[5px] text-[11px] block md:float-left md:pt-[16px] "><i
+                                        class="fa fa-info-circle main-color text-[12px] mr-0.5 text-color1"></i> We will
+                                    never share your personal info</span>
+                                <button
+                                    class="float-right py-3 px-7  opacity-100 bg-color1 hover:bg-black text-color4 rounded-sm font-bold md:inline-block"><a
+                                        href="#">GET A QUOTE</a></button>
+    
+    
+    
+                            </fieldset>
+                        </form>
+                    
+                    </section>
+                </div>
+                    </div>
+                </div>
+
+            </section>
+            <section  id="sect2" class="pb-[60px] pt-[120px]">
+                <div class="container mx-auto px-[15px]">
+                    <div class="mb-[76px] mx-[-15px]  ">
+                        <div class="md:w-[67%] w-full mx-auto relative px-[15px] text-center min-h-[1] ">
+                            <h2 class="mb-[18px] uppercase text-color1  font-bold font-Ubuntu ">abouts<span class=" text-color5"> Swan
+                                    LAke</span></h2>
+                            <span class="divider mx-auto mb-[19px] block mt-[-19px]  w-[65px] h-[10px]"></span>
+                            <p class="text-color2 font-sans">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s</p>
+                        </div>
+                    </div>
+                    <div class="px-[-15px] flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-1/4 w-full  leading-[22px] pb-[60px] relative px-[15px]">
+                            <span
+                                class="block mb-[34px] font-bold text-[28px] leading-[17px] font-Ubuntu text-color1">01.</span>
+                            <span
+                                class="block mb-[19px] text-color5 font-bold text-[18px] leading-[20px] font-Ubuntu uppercase">the
+                                company</span>
+                            <span class="divider w-[35px] h-[10px] mb-[17px] block"></span>
+                            <p class="mb-[20px] text-color2 font-sans">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been indust...</p>
+                            <a href="#" class="text-color1 font-bold text-[12px] leading-[20px] uppercase ">READ MORE...</a>
+                        </div>
+                        <div class="md:w-1/4 w-full  leading-[22px] pb-[60px] relative px-[15px]">
+                            <span
+                                class="block mb-[34px] font-bold text-[28px] leading-[17px] font-Ubuntu text-color1">02.</span>
+                            <span
+                                class="block mb-[19px] text-color5 font-bold text-[18px] leading-[20px] font-Ubuntu uppercase">our
+                                vision</span>
+                                <span class="divider w-[35px] h-[10px] mb-[17px] block"></span>
+                            <p class="mb-[20px] text-color2 font-sans">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been indust...</p>
+                            <a href="#" class="text-color1 font-bold text-[12px] leading-[20px] uppercase">READ MORE...</a>
+                        </div>
+                        <div class="md:w-1/4 w-full  leading-[22px] pb-[60px] relative px-[15px]">
+                            <span
+                                class="block mb-[34px] font-bold text-[28px] leading-[17px] font-Ubuntu text-color1">03.</span>
+                            <span
+                                class="block mb-[19px] text-color5 font-bold text-[18px] leading-[20px] font-Ubuntu uppercase">Our
+                                mission</span>
+                                <span class="divider w-[35px] h-[10px] mb-[17px] block"></span>
+                            <p class="mb-[20px] text-color2 font-sans">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been indust...</p>
+                            <a href="#" class="text-color1 font-bold text-[12px] leading-[20px] uppercase ">READ MORE...</a>
+                        </div>
+                        <div class="md:w-1/4 w-100%  leading-[22px] pb-[60px] relative px-[15px]">
+                            <span
+                                class="block mb-[34px] font-bold text-[28px] leading-[17px] font-Ubuntu text-color1">04.</span>
+                            <span
+                                class="block mb-[19px] text-color5 font-bold text-[18px] leading-[20px] font-Ubuntu uppercase">our
+                                process</span>
+                                <span class="divider w-[35px] h-[10px] mb-[17px] block"></span>
+                            <p class="mb-[20px] text-color2 font-sans">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been indust...</p>
+                            <a href="#" class="text-color1 font-bold text-[12px] leading-[20px] uppercase">READ MORE...</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="div1" class=" text-center  py-[120px]">
+                <div class="container mx-auto px-[15px] pt-[30px]">
+                    <div class="mx-[-15px] flex flex-wrap md:flex-nowrap">
+                        <div class=" md:w-1/4 w-full pb-[30px]">
+                            <span class="block md:text-[72px] text-5xl md:leading-[80px] leading-[60px] mb-[-6px] text-color1">246</span>
+                            <span class="block uppercase">clients</span>
+                        </div>
+                        <div class="md:w-1/4 w-full  pb-[30px]">
+                            <span class="block md:text-[72px] text-5xl md:leading-[80px] leading-[60px] mb-[-6px] text-color1">390</span>
+                            <span class="block uppercase">coffee</span>
+                        </div>
+                        <div class="md:w-1/4 w-full pb-[30px]">
+                            <span class="block md:text-[72px] text-5xl md:leading-[80px] leading-[60px] mb-[-6px] text-color1">56</span>
+                            <span class="block uppercase">Awards</span>
+                        </div>
+                        <div class="md:w-1/4 w-full pb-[30px]">
+                            <span class="block md:text-[72px] text-5xl md:leading-[80px] leading-[60px] mb-[-6px] text-color1">470</span>
+                            <span class="block uppercase">Brand</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="section4" class="pt-[120px] pb-[60px] overflow-hidden">
+                <div class="container mx-auto px-[15px]  ">
+                    <div class="mx-[-15px] ">
+                        <div class="md:w-1/2 w-full float-right pb-16  ">
+                            <div class="pl-[8.5%] md:pt-10 md:pl-[7.8%]  ">
+                                <header class="mb-[37px] ">
+                                    <h2 class="mb-5 uppercase text-color5 font-Ubuntu text-3xl font-700 "><span class="text-color1">our Great</span> services</h2>
+                                    <span class="divider  mb-3 block  w-[65px] h-[10px]"></span>
+                                    <p class="text-[#999] font-[14px] leading-[1.714] font-Open Sans">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been standard. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    
+                                </header>
+                                <ul class="text-[#777] font-bold font-Ubuntu mb-3 ">
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Responsive Design</li>
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Great Support</li>
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Look great on any devices</li>
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Highest Speed</li>
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Fresh Design</li>
+                                    <li class="text-[#777] font-bold font-Ubuntu mb-3"><i class="fa fa-caret-right main-color mr-3 ml-1 align-middle text-color1"></i>Useful and Intuitive Interface</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 pb-[60px] relative px-[15px] float-left ">
+                            <ul id="sec4"  class="rounded-md overflow-hidden md:grid md:grid-cols-2">
+                                <li class="bg-bageground1 w-full h-[230px] relative overflow-hidden float-left">
+                                    <div class="box absolute left-0 right-0 top-1/2 translate-y-[-32%] transition-all duration-[3s] text-center ">
+                                        <img src="./images/document.svg" class="w-10 mx-auto mb-4 icoomn" >
+                                        <span class="block text-color1 font-bold font-Ubuntu text-lg uppercase mb-4 ">Awesome Design</span>
+                                        <span class="divider w-[35px] h-[10px] mx-auto block"></span>
+                                        <p class="text-[#777] max-w-[90%]  mt-[15px] mx-auto leading-5 translate-y-1/2 opacity-0 boxp ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ever since the 1500s.</p>
+    
+    
+                                    </div>
+                                </li>
+                                <li class="bg-bageground2 w-full h-[230px] relative overflow-hidden hover:cursor-pointer">
+                                    <div class="box absolute left-0 right-0 top-1/2  translate-y-[-32%] transition-all duration-[3s] text-center  ">
+                                        <img src="./images/mobile.svg" class="w-12 mx-auto mb-4 icoomn" >
+                                        <span class="block text-color1 font-bold font-Ubuntu text-lg uppercase mb-4">Responsive Layout</span>
+                                        <span class="divider w-[35px] h-[10px] mx-auto block"></span>
+                                        <p class="text-[#777] max-w-[90%]  mt-[15px] mx-auto leading-5 translate-y-1/2 opacity-0 boxp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ever since the 1500s.</p>
+                                        
+    
+                                    </div>
+                                </li>
+                                <li class="bg-bageground2 w-full h-[230px] relative overflow-hidden">
+                                    <div class="box absolute left-0 right-0 top-1/2 translate-y-[-32%] transition-all duration-[3s] text-center  ">
+                                        <img src="./images/layers1.svg" class="w-12 mx-auto mb-4 icoomn " >
+                                        <span class="block text-color1 font-bold font-Ubuntu text-lg uppercase mb-4">Easy to Customize</span>
+                                        <span class="divider w-[35px] h-[10px] mx-auto block"></span>
+                                        <p class="text-[#777] max-w-[90%]  mt-[15px] mx-auto leading-5 opacity-0 translate-y-1/2 boxp ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ever since the 1500s.</p>
+                                        
+    
+                                    </div>
+                                </li>
+                                <li class="bg-bageground1   w-full h-[230px] relative overflow-hidden">
+                                    <div class="box absolute left-0 right-0 top-1/2   translate-y-[-32%] transition-all duration-[3s] text-center  ">
+                                        <img src="./images/gears.svg" class="w-12 mx-auto mb-4 icoomn" >
+                                        <span class="block text-color1 font-bold font-Ubuntu text-lg uppercase mb-4 ">Full Support work</span>
+                                        <span class="divider w-[35px] h-[10px] mx-auto block"></span>
+                                        <p class="text-[#777] max-w-[90%] translate-y-1/2  opacity-0 mt-[15px] mx-auto leading-5 boxp ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ever since the 1500s.</p>
+                                        
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section id="section5" class="pt-[120px] pb-[60px] overflow-hidden block">
+                <div class="container mx-auto px-[15px]  ">
+                    <header  class="mx-[-15px] mb-[76px]">
+                        <div class="w-full text-center relative px-[15px] md:w-2/3 md:mx-auto">
+                            <h2 class="mb-[18px] text-color5 uppercase"><span class="text-color1">Great</span> Pricing Table</h2>
+                            <span class="mx-auto divider w-[35px] h-[10px]  block mt-[-10px]"></span>
+                            <p class="text-color2 font-sans text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </header>
+                    <div class="mx-[-15px]">
+                        <div  class="pb-[60px] w-full relative px-[15px] float-left  md:w-1/3">
+                            <div class="bg-color4 border-[1px] border-solid border-[#eee]">
+                                
+                                    <header class="text-xs text-[#777] pt-[30px] px-[10%] pb-[33px]">
+                                        <strong class="text-color5 block text-[14px] uppercase font-bold font-Ubuntu">Startup</strong>
+                                        <span class="block text-[14px] mb-1"><span class="text-[38px] leading-[50px] inline-block align-middle mr-1 mb-[-5px] ml-[-5px] text-color1" >$125</span><span class="align-bottom inline-block tracking-widest text-[14px]"> / Month</span></span>
+                                        <p class="text-color2">Best package for small awesome team</p>
+                                    </header>
+                                <div class="border-t-[1px] border-solid border-top-[#eee] leading-[22px] py-[38px] px-[9.4%]">
+                                    <h3 class="mb-5">Small awesome team</h3>
+                                    <span  class="divider mb-[15px] ml-1 w-[34px] h-[10px] block leading-[22px]"></span>
+                                    <p class="text-color2 text-xs mb-[22px]" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust...</p>
+                                    <a href="#popup1" class="text-color1 font-bold text-[12px] leading-[20px] uppercase">order now...</a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="pb-[60px] w-full relative px-[15px] float-left  md:w-1/3">
+                            <div class="bg-color4 border-[1px] border-solid border-[#eee]">
+                                
+                                    <header class="text-xs text-[#777] pt-[30px] px-[10%] pb-[33px]">
+                                        <strong class="text-color5 block text-[14px] uppercase font-bold font-Ubuntu">personal</strong>
+                                        <span class="block text-[14px] mb-1"><span class="text-[38px] leading-[50px] inline-block align-middle mr-1 mb-[-5px] ml-[-5px] text-color1">$225</span><span class="align-bottom inline-block tracking-widest text-[14px]"> /Month</span></span>
+                                        <p  class="text-color2">Best package for single people</p>
+                                    </header>
+                                <div class="border-t-[1px] border-solid border-top-[#eee] leading-[22px] py-[38px] px-[9.4%]">
+                                    <h3 class="mb-5">single people User</h3>
+                                    <span  class="divider mb-[15px] ml-1 w-[34px] h-[10px] block leading-[22px]"></span>
+                                    <p class="text-color2 text-xs mb-[22px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust...</p>
+                                    <a href="#popup1" class="text-color1 font-bold text-[12px] leading-[20px] uppercase">order now...</a>
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pb-[60px] w-full relative px-[15px] float-left md:w-1/3 ">
+                            <div class="bg-color4 border-[1px] border-solid border-[#eee]" >
+                                
+                                    <header class="text-xs text-[#777] pt-[30px] px-[10%] pb-[33px]">
+                                        <strong class="text-color5 block text-[14px] uppercase font-bold font-Ubuntu">Business</strong>
+                                        <span class="block text-[14px] mb-1"><span class="text-[38px] leading-[50px] inline-block align-middle mr-1 mb-[-5px] ml-[-5px] text-color1">$325</span><span class="align-bottom inline-block tracking-widest text-[14px]"> /Month</span></span>
+                                        <p  class="text-color2">Best package for big awesome team</p>
+                                    </header>
+                                <div class="border-t-[1px] border-solid border-top-[#eee] leading-[22px] py-[38px] px-[9.4%]">
+                                    <h3 class="mb-5">big awesome team</h3>
+                                    <span  class="divider mb-[15px] ml-1 w-[34px] h-[10px] block leading-[22px]"></span>
+                                    <p class="text-color2 text-xs mb-[22px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indust...</p>
+                                    <a href="#popup1" class="text-color1 font-bold text-[12px] leading-[20px] uppercase">order now...</a>
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section6" class="bg-[#f8f8f8] text-[#f8f8f8]  relative py-[120px] bg-fixed overflow-hidden ">
+                <span class=" absolute top-0 right-0 bottom-0 left-0 opacity-75 pointer-events-none bg-black "></span>
+                <div  class="container mx-auto px-[15px] ">
+                    <div class="mx-[-15px]">
+                        <div class="relative px-[15px] md:w-4/6  text-center min-h-[1px] md:float-left md:left-[16.6666666667%]">
+                            <span class="text-center block  text-[14px]">Creative Unbounce Landing Page</span>
+                            <h2 class="uppercase text-center font-Ubuntu mb-6 ">get a free Quote today</h2>
+                            <span class="divider mx-auto mb-4 w-[65px] h-[10px]  text-center block"></span>
+                            <p class="mb-[28px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <button class="py-[16px] px-[43px] bg-color1 hover:bg-black  text-color4 rounded-sm font-bold uppercase overflow-visible transition-all "><a href="#">Click here</a></button>
+    
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </main>
+<footer class="w-full overflow-hidden relative py-[30px] bg-[#1c1c1c]">
+    <div class="container mx-auto px-[15px]">
+        <div class="mx-[-15px]">
+            <div  class="md:w-1/3 w-full relative px-[15px] float-left ">
+                <div class="float-left md:pr-[8.8%]">
+                    <a class="text-color1"><img src="./images/logo.png" class="max-w-full h-auto"></a>
+                </div>
+               
+               
+            </div>
+            <div class="w-2/3 relative px-[15px] float-left ">
+                <ul class="md:text-right text-left font-Ubuntu m-0 md:pl-0 pt-10 md:pb-0 md:pt-0 pb-3">
+                    <li class="relative md:pr-[8.8%] md:pl-[7%] px-[70px] pb-5 inline-block ">
+                        <p
+                        class="w-[50px] h-[50px] absolute md:right-0 left-0 right-auto  md:left-auto top-[-3px]   rounded-[560%] border-[1px] border-solid border-[#292929] text-center pt-3  ">
+                        <i class="fa fa-envelope main-color text-color1 "> </i></p>
+    
+                    <p class="text-color2 font-bold">Contact US :</p>
+                    <a href="mailto:Mail@Example.com" class="text-color3">Mail@Example.com</a>
+                        
+                        
+                    </li>
+                    <li class="relative md:pr-[8.8%] md:pl-[7%]   px-[70px] pb-5 inline-block">
+                        <p
+                                    class="w-[50px] h-[50px] rounded-[560%] border-[1px] md:left-auto border-solid border-[#292929] absolute md:right-0 left-0 right-auto top-[-3px] text-center pt-3">
+                                    <i class="fa fa-phone main-color text-color1   "></i></p>
+    
+                                <p class="text-color2 font-bold">Call Us :</p>
+                                <a href="tel:+201093515252" class="text-color3">+201093515252</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container mx-auto px-[15px] ">
+     <div class="mx-[-15px]">
+         <div class="w-full md:w-[50%] md:mt-8 pt-5 md:border-t border-solid border-[#292929] float-left relative px-[15px] inline-block">
+                <p class="mb-3">2017 © Swan Lake. All rights reserved.</p>
+                
+         </div>
+            <div class="w-full md:w-[50%] md:mt-8 pt-5 md:border-t border-solid border-[#292929] float-left relative px-[15px]  md:block hidden">
+                <ul class="     text-right">
+                    <li class="pl-[5%] inline-block"><a href="#" class=" hover:opacity-[3]  transition-all"><i class="fa-brands fa-facebook-f  inline-block hover:text-color4"></i> </a></li>
+                        <li class="pl-[5%] inline-block"><a href="#" class=" hover:opacity-[3]  transition-all"><i class="fa-brands fa-behance  inline-block hover:text-color4"></i> </a></li>
+                        <li class="pl-[5%] inline-block"><a href="#" class=" hover:opacity-[3]  transition-all"><i class="fa-brands fa-twitter  inline-block hover:text-color4"></i> </a></li>
+                </ul>
+            </div>
+            
+          
+        </div>
+        
+    </div>
+
+
+
+</footer>
+        <span class="fa fa-angle-up opacity-100 fixed bottom-0 right-5 w-12 text-white h-12 z-[9999] text-2xl leading-[47px] translate-y-[-20px] pt-3 text-center rounded-sm bg-[#252525] inline-block"></span>
+    
+        
+
+</body>
+</html>
